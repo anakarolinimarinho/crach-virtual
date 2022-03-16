@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CRACHÁ VIRTUAL</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div id="ropeClasp">
+          <div id="rope"></div>
+          <div id="clasp"></div>
+        </div>
+        <div class="avatar">
+          <img
+            src="images/foto pessoal.jpg"
+            alt="foto pessoal"
+            id="userImage"
+          />
+        </div>
+
+        <div class="outside"></div>
+        <h1 id="userName">Ana Karolini</h1>
+        <a
+          id="userLink"
+          href="https://github.com/anakarolinimarinho"
+          target="_blanck"
+        >
+          <img id="gitIcon" src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">anakarolinimarinho</span>
+        </a>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
+
+        <ul id="socialLinks">
+          <li class="instagram">
+            <a href="https:instagram.com/anakarolinimarinho" target="-blanck">
+              <img src="images/instagram.svg" açt="ícone instagram" />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https:facebook.com/anakarolinimarinho" target="-blanck">
+              <img src="images/facebook.svg" alt="ícone facebook" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector('main'), {
+        max: 7,
+        speed: 300
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  --black: hsl (240, 6%, 13%);
+  --grey: hsl(0, 0%, 100%);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(235, 128, 41);
+  background: linear-gradient(
+    45deg,
+    rgba(9, 9, 10, 1 39%),
+    #e23393 63%,
+    rgba (255, 122, 41, 1) 85%,
+    rgba (255, 205, 39, 1) 100%
+  );
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+main {
+  background: url(images/Mobile.pink.svg) no-repeat center/cover;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 250px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--grey);
+}
+
+.avatar {
+  position: relative;
+}
+
+#userImage {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  clip-path: ellipse(35% 40% at 50% 50%);
+}
+
+#userName {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: -0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+#linksSocialMedia {
+  color: var(--grey);
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#userBio {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 400px) {
+  main {
+    display: grid;
+    place-items: center;
+    background: url(images/Mobile.pink.svg) no-repeat center/cover;
+    border-radius: 2rem;
+    height: 68vh;
+    width: clamp(320px, 20vw, 600px);
+  }
+
+  ul {
+    margin: 1.5rem auto 0;
+    gap: 0.75rem;
+  }
+
+  #ropeClasp {
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+  }
+
+  #rope {
+    position: absolute;
+    bottom: 36rem;
+    z-index: 1;
+    width: 60px;
+    height: 280px;
+    background: linear-gradient(161.24deg, #ff008e -15.25%, #f8305b 111.89%);
+  }
+
+  #clasp {
+    position: absolute;
+    background: #121214;
+    width: 80px;
+    height: 8px;
+    border-radius: 1rem;
+    top: 63px;
+  }
+}
+
+#userImage {
+  align-items: center;
+  transition: all ease 0.75s;
+}
+
+a > img {
+  position: relative;
+  width: 50px;
+  top: 0;
+  border-radius: 0.5rem;
+  transition: all ease 0.3s;
+}
+
+#gitIcon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+#gitUserConteiner {
+  display: flex;
+  place-items: center;
+}
+
+#userLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
