@@ -45,16 +45,17 @@ main {
 }
 
 #userImage {
-  width: 15rem;
-  height: 15rem;
+  width: 11rem;
+  height: 11rem;
   object-fit: cover;
-  clip-path: ellipse(35% 40% at 50% 50%);
+  border-radius: 80%;
+  border: 4px solid rgb(235, 128, 41);
 }
 
 #userName {
   font-size: 1.4rem;
   font-weight: 700;
-  margin-top: -0.4rem;
+  margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
 
@@ -105,7 +106,7 @@ ul {
 
   #rope {
     position: absolute;
-    bottom: 36rem;
+    bottom: 36.2rem;
     z-index: 1;
     width: 60px;
     height: 280px;
